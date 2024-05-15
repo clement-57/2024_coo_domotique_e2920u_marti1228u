@@ -3,28 +3,28 @@ Compréhension du Diagramme de Séquence
 Le diagramme de séquence représente les interactions entre les différentes classes lors du processus de chargement des CDs dans un magasin. Voici une explication détaillée de ce processus:
 
 1. Début du processus de chargement
-   - Le processus commence lorsque l'utilisateur ou une autre entité appelle la méthode `chargerMagasin` de la classe `ChargeurMagasin`.
+   - Le processus commence lorsque l'utilisateur ou une autre entité appelle la méthode chargerMagasin de la classe ChargeurMagasin.
 
 2. Initialisation du ChargeurMagasin
-   - Le constructeur de `ChargeurMagasin` est invoqué avec le nom du répertoire contenant les fichiers XML descriptifs des CDs.
+   - Le constructeur de ChargeurMagasin est invoqué avec le nom du répertoire contenant les fichiers XML descriptifs des CDs.
 
 3. Chargement des fichiers XML
-   - La méthode `chargerMagasin` parcourt tous les fichiers XML du répertoire spécifié.
+   - La méthode chargerMagasin parcourt tous les fichiers XML du répertoire spécifié.
 
 4. Création des objets CD
-   - Pour chaque fichier XML, la méthode `chargerMagasin` utilise la classe `ChargeurCD` pour créer un objet `CD`.
-   - Le constructeur de `ChargeurCD` est appelé avec le nom du fichier XML correspondant.
-   - La méthode `chargerCD` de `ChargeurCD` lit les données du fichier XML et crée un objet `CD`.
+   - Pour chaque fichier XML, la méthode chargerMagasin utilise la classe ChargeurCD pour créer un objet CD.
+   - Le constructeur de ChargeurCD est appelé avec le nom du fichier XML correspondant.
+   - La méthode chargerCD de ChargeurCD lit les données du fichier XML et crée un objet CD.
 
 5. Ajout des CDs au Magasin
-   - Une fois qu'un objet `CD` est créé, il est ajouté à la liste des CDs du magasin.
-   - La méthode `ajouterCD` de la classe `Magasin` est appelée avec l'objet `CD` nouvellement créé.
+   - Une fois qu'un objet CD est créé, il est ajouté à la liste des CDs du magasin.
+   - La méthode ajouterCD de la classe Magasin est appelée avec l'objet CD nouvellement créé.
 
 6. Retour de l'objet Magasin
-   - Après avoir parcouru tous les fichiers XML et créé les objets `CD` correspondants, la méthode `chargerMagasin` retourne l'objet `Magasin` contenant tous les CDs.
+   - Après avoir parcouru tous les fichiers XML et créé les objets CD correspondants, la méthode chargerMagasin retourne l'objet Magasin contenant tous les CDs.
 
 7. Résumé des opérations
-   - Le diagramme de séquence illustre clairement le flux d'appels entre les classes `ChargeurMagasin`, `ChargeurCD`, et `Magasin`.
-   - Il montre comment les objets `CD` sont initialisés à partir des fichiers XML et ajoutés à l'objet `Magasin`.
+   - Le diagramme de séquence illustre clairement le flux d'appels entre les classes ChargeurMagasin, ChargeurCD, et Magasin.
+   - Il montre comment les objets CD sont initialisés à partir des fichiers XML et ajoutés à l'objet Magasin.
 
-En résumé, le diagramme de séquence met en évidence les interactions nécessaires pour charger les données des CDs à partir des fichiers XML et construire un objet `Magasin` complet. Chaque classe joue un rôle spécifique dans ce processus, et leurs interactions permettent de réaliser cette tâche de manière organisée et efficace.
+En résumé, le diagramme de séquence montre les interactions nécessaires pour charger les données des CDs à partir des fichiers XML et construire un objet Magasin en entier. Chaque classes y joue un rôle spécifique, et leurs interactions permettent de réaliser cette tâche de manière organisée et efficace.
